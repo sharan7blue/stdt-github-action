@@ -6,7 +6,6 @@ jobs:
     sdtt:
       runs-on: ubuntu-latest
       name: Run Structured Data Tests
-      needs: [deploy_preview]
       steps:
           - name: Use Node.js 12.x
             uses: actions/setup-node@v1
@@ -14,6 +13,6 @@ jobs:
               node-version: 12.x
           - name: Run Structured Data Test
             run: |
-                 yarn i structured-data-testing-tool -g
+                 npm i structured-data-testing-tool -g
                  sdtt --url  dtt --url https://liberty-portal.netlify.app/how-to-make-a-face-framing-lace-braid-at-home  --schemas "jsonld:Article"  -p Twitter -p Facebook --presets SocialMedia -i            
           
