@@ -16,5 +16,10 @@
   "devDependencies": {
     "@sanity/cli": "^1.149.9",
     "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "npm": "^6.14.5",
+    "structured-data-testing-tool": "^4.5.0"
   }
 }
