@@ -61,7 +61,7 @@ jobs:
               node-version: 12.x
           - name: Run Structured Data Test
             run: |
-                 npm i structured-data-testing-tool -g
+                 npm i structured-data-testing-tool 
                  sdtt --url  ${{ needs.deploy_preview.outputs.url }}               
           
     Cypress:
